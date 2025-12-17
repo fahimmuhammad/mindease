@@ -1,0 +1,297 @@
+/* ---------------------------------------------------
+   MindEase — Mature Premium UI (Notion/Linear Style)
+----------------------------------------------------- */
+
+/* ===== BASE ===== */
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f6f8;
+    color: #1b1f24;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth interactions */
+* {
+    transition: 0.15s ease;
+    box-sizing: border-box;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111418;
+}
+
+p {
+    color: #384048;
+    line-height: 1.55;
+    font-size: 15.5px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    margin-top: 22px;
+}
+
+/* ===== BUTTONS ===== */
+button,
+.primary {
+    background: #1f2937;
+    color: #ffffff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14.5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover,
+.primary:hover {
+    background: #0f1115;
+}
+
+/* ===== SECONDARY BUTTON ===== */
+.secondary {
+    background: #e5e7eb;
+    color: #111418;
+}
+
+.secondary:hover {
+    background: #d8dadd;
+}
+
+/* ===== INPUTS ===== */
+textarea,
+input[type="text"],
+input[type="number"],
+input[type="range"] {
+    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Range slider */
+input[type="range"] {
+    height: 4px;
+    accent-color: #1f2937;
+}
+
+/* ===== NAVIGATION BAR ===== */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav-inner {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+.nav-inner a {
+    text-decoration: none;
+    color: #1b1f24;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 2px;
+}
+
+.nav-inner a:hover {
+    color: #111418;
+}
+
+/* ===== HISTORY / LIST ENTRIES ===== */
+.entry {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+
+.entry-meta {
+    font-size: 13.5px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+/* ===== FEEDBACK BUTTONS ===== */
+.feedback-btn {
+    border: 1px solid #d1d5db;
+    background: #f8f9fa;
+    color: #1b1f24;
+    padding: 7px 12px;
+    border-radius: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.feedback-btn:hover {
+    background: #e5e7eb;
+}
+
+/* ===== INFO BOX ===== */
+.info-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------
+   MindEase — Suggestion Preview + Modal (Modern UI)
+-----------------------------------------------------------*/
+
+.suggestion-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    border: 1px solid rgba(15,23,42,0.03);
+    font-family: inherit;
+    max-width: 920px;
+    margin-top: 12px;
+}
+
+.suggestion-card .meta {
+    min-width: 62px;
+    text-align: center;
+    color: #475569;
+    font-size: 13px;
+}
+
+.suggestion-card .meta .time {
+    font-weight: 700;
+    font-size: 14px;
+    color: #0f172a;
+}
+
+.suggestion-card .content {
+    flex: 1;
+}
+
+.suggestion-card h4 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    color: #0f172a;
+}
+
+.suggestion-card .type {
+    color: #475569;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.suggestion-card ol {
+    margin: 8px 0 0 18px;
+    padding: 0;
+    color: #0f172a;
+}
+
+.suggestion-card .cta {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
+
+/* ---- Buttons ---- */
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(15,23,42,0.08);
+    background: #fff;
+    color: #0f172a;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.15s;
+}
+
+.btn:hover {
+    background: #f1f5f9;
+}
+
+.btn.primary {
+    background: #2563eb;
+    color: #fff;
+    border-color: transparent;
+}
+
+.btn.primary:hover {
+    background: #1e4ed8;
+}
+
+/* ---- Modal ---- */
+
+.suggestion-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2,6,23,0.45);
+    z-index: 1200;
+}
+
+.suggestion-modal-panel {
+    width: 92%;
+    max-width: 760px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 18px 50px rgba(2,6,23,0.35);
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: #334155;
+}
+
+.btn-close:hover {
+    color: #0f172a;
+}
